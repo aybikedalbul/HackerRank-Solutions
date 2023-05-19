@@ -32,15 +32,14 @@ class Result {
                 first_point++;
                 array[0] = first_point;
             }
-            else if(a.get(i) < b.get(i)){
+            if(a.get(i) < b.get(i)){
                 second_point++;
                 array[1] = second_point;
             }
-            else{
-                array[0] = first_point;
-                array[1] = second_point;
-            }
         }
+         array[0] = first_point;
+         array[1] = second_point;
+            
         return Arrays.asList(array);
     }
 
