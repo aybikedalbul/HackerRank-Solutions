@@ -21,21 +21,18 @@ class Result {
 
     public static List<Integer> gradingStudents(List<Integer> grades) {
     // Write your code here
-    
     for(int i = 0; i < grades.size(); i++){
-        if(grades.get(i)  < 38 ){
-            return grades;
-        }
-        int number = grades.get(i) % 5; 
-        if((5 - number) < 3){
-          grades.set(i, grades.get(i) + (5 - number));
-        }
+        if(grades.get(i) >= 38){
+            int digit = grades.get(i) % 5;
+            if((5-digit) < 3){
+                grades.set(i, (grades.get(i) + (5 - digit)));
             }
-    return grades;
-    }
+        }
+    }return grades;
 
 }
 
+}
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
