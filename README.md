@@ -15,12 +15,6 @@ The repository is organized by problem categories and difficulty levels. Each fo
 
 To run any of the solutions, simply navigate to the corresponding directory and execute the Python script. Ensure you have Python installed on your machine.
 
-Example:
-
-```bash
-cd Algorithms/Easy
-python example_problem.py
-
 
 ## Highlights ✨
 
